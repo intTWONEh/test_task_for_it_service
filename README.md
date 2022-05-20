@@ -37,7 +37,7 @@ GUI:
 Проект решения состоит из двух частей: серверной части на java + spring и клиентской части html + js + css.
 Для взаимодействия с сервером реализован REST API. Клиент взаимодействует с сервером с помощью js (ajax).
 
-Клиенту предосавлен интерфейс взаимодействия с сервером (Рисунок 1).
+Клиенту предоставлен интерфейс взаимодействия с сервером (Рисунок 1).
 <p align="center">
 <img  src="https://github.com/intTWONEh/test-task-for-it-service/blob/main/interaction.PNG" alt="interaction.png">
 </p>
@@ -55,7 +55,7 @@ MagicSquare - 1,2,3,4,5,6,7,8,9
 
 StringCrossings - arp,live,strong;lively,alive,harp,sharp,armstrong
 
-необходимо ввести n слов через запяту для первого массива строк, после через точку запятой (;) следующий массив строк
+необходимо ввести n слов через запятую для первого массива строк, после через точку запятой (;) следующий массив строк
 результат предоставляется в виде массива arp,live,strong
 
 Данные импортируются и экспортируются в формате json, формат файла .txt к примеру
@@ -63,3 +63,12 @@ StringCrossings - arp,live,strong;lively,alive,harp,sharp,armstrong
 {"conditions":"arp,live,strong;lively,alive,harp,sharp,armstrong","taskName":"StringCrossings"}
 
 Сервер взаимодействует с БД H2. Доступ к БД возможен при активности сервера по адресу http://localhost:9999/h2/, также необходимо в поле JDBC URL вписать jdbc:h2:file:./data/fileDb после нажать Connect.
+
+## Дополнение
+
+Есть возможность расширить список задач. Для этого необходимо в разделе проекта model создать класс который будет решать задачу и имплементировать интерфейс Task.
+И пометить анотацией @Component класс.
+
+Метод String getResult(final String conditions) принимает условия задачи и возвращает результат в строковом формате.
+
+Метод boolean checkConditions(String conditions) должен проверить коректность условия задачи и если оно некорректное вернуть true, инчае false.
