@@ -37,6 +37,8 @@ GUI:
 Проект решения состоит из двух частей: серверной части на java + spring и клиентской части html + js + css.
 Для взаимодействия с сервером реализован REST API. Клиент взаимодействует с сервером с помощью js (ajax).
 
+После запуска проекта необходимо зайти на http://localhost:9999/
+
 Клиенту предоставлен интерфейс взаимодействия с сервером (Рисунок 1).
 <p align="center">
 <img  src="https://github.com/intTWONEh/test-task-for-it-service/blob/main/interaction.PNG" alt="interaction.png">
