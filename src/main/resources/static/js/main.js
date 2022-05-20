@@ -1,4 +1,4 @@
-function getTask() {
+﻿function getTask() {
     $.ajax({
         type : "GET",
         url : "tasks",
@@ -110,7 +110,7 @@ function download() {
 }
 
 function forDownloadGetAnswer(id) {
-    document.getElementById('conditions').textContent = document.getElementById(id).getElementsByClassName("2")[0].innerText
+    document.getElementById('conditions').value = document.getElementById(id).getElementsByClassName("2")[0].innerText
     getAnswer()
 }
 
@@ -128,7 +128,7 @@ function importFile() {
         reader.onload = function(ev) {
             const conditionsAndNameTask = JSON.parse(reader.result);
 
-            document.getElementById('conditions').textContent = conditionsAndNameTask.conditions;
+            document.getElementById('conditions').value = conditionsAndNameTask.conditions;
 
             const selectName = document.getElementById("model");
 
