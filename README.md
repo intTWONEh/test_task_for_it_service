@@ -24,3 +24,17 @@ GUI:
 Если не знакомы ни с каким, из предложенных мной фреймворков, то предлагаю использовать Cuba Platform (https://www.cuba-platform.ru/)(https://www.cuba-platform.ru/learn/quickstart/studio/), но на ваше усмотрение.
 
 (Файл с задачами task.txt)
+
+## Описание решения:
+Проект решения состоит из двух частей: серверной части на java + spring и клиентской части html + js + css.
+Для взаимодействия с сервером реализован REST API. Клиент взаимодействует с сервером с помощью js (ajax).
+
+Клиенту предосавлен интерфейс взаимодействия с сервером (Рисунок 1).
+<p align="center">
+<img  src="https://github.com/intTWONEh/test-task-for-it-service/blob/master/scheme.png" alt="interaction.png">
+</p>
+<p align="center">
+Рисунок 1 - Интерфейс клиента
+</p>
+
+Сервер взаимодействует с БД H2. Доступ к БД возможен при активности сервера по адресу http://localhost:9999/h2/, также необходимо в поле JDBC URL вписать jdbc:h2:file:./data/fileDb после нажать Connect.
