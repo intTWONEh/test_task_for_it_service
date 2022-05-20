@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/main.js}" src="../static/js/main.js"></script>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+</head>
+<body onload="getTask()">
+<table>
+    <tr>
+        <td>
+            <label for="model">Задача</label>
+            <select id="model" class="form-control"><option></option></select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="conditions"> Условия</label><br/>
+            <textarea id="conditions"></textarea>
+        </td>
+        <td>
+            <label for="answer">Ответ</label><br/>
+            <textarea id="answer"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+         <button onclick="getAnswer()">Посчитать</button>
+         <button onclick="save()">Сохранить</button>
+         <button onclick="download()">Загрузить</button>
+         <button onclick="exportInFile()">Экспортировать</button>
+         <button class="styleClass" onclick="document.getElementById('getFile').click()">Импортировать</button>
+         <input type='file' id="getFile" accept=".txt,.json" style="display:none">
+        </td>
+    </tr>
+</table>
+    <script>importFile()</script>
+</body>
+</html>
