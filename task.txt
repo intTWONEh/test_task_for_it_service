@@ -1,0 +1,39 @@
+Задача 1:
+Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of strings of a2.
+
+Example 1:
+
+a1 = ["arp", "live", "strong"]
+
+a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+returns ["arp", "live", "strong"]
+
+Example 2:
+
+a1 = ["tarp", "mice", "bull"]
+
+a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+returns []
+
+Beware: r must be without duplicates.
+
+Задача 2:
+Дана таблица 3х3, необходимо превратить её в (полу)магический квадрат (https://ru.wikipedia.org/wiki/Магический_квадрат) за наименьшую стоимость.
+
+Стоимость вычисляется, как разница между исходной цифрой в массиве и конечной.
+
+Например:
+
+1 2 3
+4 5 6
+7 8 9
+
+Превращается в 
+
+4 3 8
+2 7 6
+9 5 1
+
+за стоимость равную 26.
