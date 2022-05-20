@@ -31,7 +31,7 @@ GUI:
 
 Клиенту предосавлен интерфейс взаимодействия с сервером (Рисунок 1).
 <p align="center">
-<img  src="https://github.com/intTWONEh/test-task-for-it-service/blob/master/interaction.png" alt="interaction.png">
+<img  src="https://github.com/intTWONEh/test-task-for-it-service/blob/main/interaction.png" alt="interaction.png">
 </p>
 <p align="center">
 Рисунок 1 - Интерфейс клиента
